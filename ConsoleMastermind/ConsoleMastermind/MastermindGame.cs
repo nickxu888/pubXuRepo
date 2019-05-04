@@ -16,7 +16,7 @@ namespace ConsoleMastermind
         /// Generates a master code from 1111 to 6666
         /// </summary>
         /// <returns>An int from 1111 to 6666</returns>
-        public int getMasterCode()
+        private int getMasterCode()
         {
             string strMasterdigit = "";
             String strMasterCode = "";
@@ -40,7 +40,7 @@ namespace ConsoleMastermind
       /// set a user input number into a working reord
       /// </summary>
       /// <param name="InputNum"></param>
-        public void setWorkingGameRecord(string InputNum)
+        private void setWorkingGameRecord(string InputNum)
         {
            workingmap = new ArrayList();
            int iDigit = 0;
@@ -59,12 +59,12 @@ namespace ConsoleMastermind
          }
         
         /// <summary>
-        /// check if a game record against a master is correct. 
+        /// check if a working game record against a master is matched. 
         /// If both digit and position is matched, marked as +.
         /// If digit is matched but off the position, marked as -.
         /// If nothing is matched, marked as blank.
         /// </summary>
-        public void checkGameRecord()
+        private void checkGameRecord()
         {
             foreach (var mitem in mastermap)
             {
@@ -85,7 +85,7 @@ namespace ConsoleMastermind
                  }
             }
         }
-        public void printGameResult()
+        private void printGameResult()
         {
             StringBuilder result1 = new StringBuilder();
             StringBuilder result2 = new StringBuilder();
@@ -122,6 +122,40 @@ namespace ConsoleMastermind
                 isValid = false;
             }
             return isValid;
+        }
+
+        public bool StartMastermind()
+        {
+            bool isSolved = false;
+            int attemps = 1;
+            int nMC = getMasterCode();
+            string sUserInput = null;
+            while (attemps <= 10)
+            {
+                Console.WriteLine("\nMake your guess(No.{0} guess):\n", attemps);
+                sUserInput = Console.ReadLine();
+                if (ValidateInput(sUserInput))
+                {
+
+                    if (Convert.ToInt32(sUserInput) == nMC)
+                    {
+                        Console.WriteLine("\nYou solved it!");
+                        isSolved = true;
+                        break;
+                    }
+                    else
+                    {
+                        setWorkingGameRecord(sUserInput);
+                        checkGameRecord();
+                        printGameResult();
+                    }
+                }
+                else
+                    Console.WriteLine("Please enter 4 digits only containing 1 to 6 and between 1111 and 6666.");
+                attemps++;
+            }
+            
+            return isSolved;
         }
     }
 }
