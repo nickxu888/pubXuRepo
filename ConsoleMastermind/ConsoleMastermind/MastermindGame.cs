@@ -112,7 +112,7 @@ namespace ConsoleMastermind
             //Console.WriteLine("Master code is {0}", result4.ToString());
         }
 
-        public bool ValidateInput(string sUserInput)
+        private bool ValidateInput(string sUserInput)
         {
             bool isValid = true;
             string fourDigitsPattern = @"^[1-6]{4}$";
