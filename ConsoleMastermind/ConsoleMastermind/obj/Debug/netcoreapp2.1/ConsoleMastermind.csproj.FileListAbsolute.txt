@@ -1,0 +1,11 @@
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\bin\Debug\netcoreapp2.1\ConsoleMastermind.deps.json
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\bin\Debug\netcoreapp2.1\ConsoleMastermind.runtimeconfig.json
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\bin\Debug\netcoreapp2.1\ConsoleMastermind.runtimeconfig.dev.json
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\bin\Debug\netcoreapp2.1\ConsoleMastermind.dll
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\bin\Debug\netcoreapp2.1\ConsoleMastermind.pdb
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\obj\Debug\netcoreapp2.1\ConsoleMastermind.csproj.CoreCompileInputs.cache
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\obj\Debug\netcoreapp2.1\ConsoleMastermind.AssemblyInfoInputs.cache
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\obj\Debug\netcoreapp2.1\ConsoleMastermind.AssemblyInfo.cs
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\obj\Debug\netcoreapp2.1\ConsoleMastermind.dll
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\obj\Debug\netcoreapp2.1\ConsoleMastermind.pdb
+C:\Users\ning xu\source\repos\ConsoleMastermind\ConsoleMastermind\obj\Debug\netcoreapp2.1\ConsoleMastermind.csprojAssemblyReference.cache
